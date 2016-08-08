@@ -165,8 +165,8 @@ function extractData(files,options) {
     
     // update the individual sheet meta data
     var sheetId = sheetFileName.replace(/xl\/worksheets\/sheet|.xml/g,'');
-    output[sheetFileName].sheetName = wbSheetInfo[sheetId].name;
-    output[sheetFileName].sheetPosition = wbSheetInfo[sheetId].position;
+    // output[sheetFileName].sheetName = wbSheetInfo[sheetId].name;
+    // output[sheetFileName].sheetPosition = wbSheetInfo[sheetId].position;
     output[sheetId] = output[sheetFileName];
     delete output[sheetFileName];
 	});
